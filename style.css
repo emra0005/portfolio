@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "bunge";
+  src: url(fonte/Bungee-Regular.ttf);
+}
+@font-face {
+  font-family: "mont";
+  src: url(fonte/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "work";
+  src: url(fonte/WorkSans-ExtraBold.ttf);
+}
