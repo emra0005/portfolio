@@ -8,5 +8,95 @@
 }
 @font-face {
   font-family: "work";
-  src: url(fonte/WorkSans-ExtraBold.ttf);
+  src: url(fonte/WorkSans-Regular.ttf);
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: #b1cfd7;
+}
+
+/* ALLE OVERSKRIFTER MED BORDEAUX BAGGRUND */
+h2 {
+  color: white;
+  background-color: #742921;
+  padding: 1.5rem;
+  text-align: center;
+  font-family: "work";
+  font-size: x-large;
+}
+
+h3 {
+  color: #742921;
+  text-align: center;
+  font-family: "work";
+}
+
+h5 {
+  color: #742921;
+  font-family: "work";
+  text-align: center;
+  margin: 10px;
+}
+
+/* min forside/hero section */
+.hero {
+  background-color: white;
+  padding: 5rem;
+  text-align: center;
+}
+
+/* jeg style mine bokse på forsiden */
+.boks a {
+  text-decoration: none;
+  background-color: #742921;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 40px;
+  font-family: "work";
+  font-size: large;
+}
+
+/* jeg styler mine kasser på om mig */
+.kasse {
+  background-color: #e9e5e1;
+  color: #742921;
+  text-align: center;
+  border-radius: 10px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+/* jeg styler mine tema kasser i projekter */
+.tema a {
+  text-decoration: none;
+  background-color: #742921;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 40px;
+  font-family: "work";
+  font-size: large;
+  max-width: 20%;
+}
+.tema {
+  max-width: 50%;
+}
+
+/* jeg styler mine knapper */
+
+.btn {
+  display: inline-block;
+  background-color: white;
+  color: #742921;
+  text-decoration: none;
+  padding: 1rem;
+  font-family: "work";
+  border-radius: 1rem;
+  box-shadow: 5px 5px 5px grey;
+  outline: solid 2px #742921;
 }
