@@ -29,3 +29,10 @@ ul li a {
   font-family: "work";
   color: #742921;
 }
+
+/* Logo */
+/* jeg tilpasser mit logo */
+.logo {
+  width: 150px;
+  height: 150px;
+}
