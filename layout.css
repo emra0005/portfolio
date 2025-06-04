@@ -12,8 +12,22 @@
   .bokse {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 100px;
-    gap: 50px;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  a.boks {
+    display: block;
+    background-color: #742921;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+    font-family: "work";
+    text-decoration: none;
   }
 
   /* MIT KÆMPE NAVN */
@@ -56,6 +70,11 @@
     display: flex;
     justify-content: center;
   }
+  /* jeg tilpasser mit logo */
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 /* DESKTOP */
@@ -70,7 +89,7 @@
 
   /* jeg sætter mine bokse på forsiden i grid */
   .bokse {
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 1fr 1fr;
   }
   /* MIT KÆMPE NAVN på OM MIG*/
@@ -103,5 +122,33 @@
 
   .mig {
     width: 100%;
+  }
+
+  /* jeg tilpasser mit logo */
+  .logo {
+    width: 200px;
+    height: 200x;
+  }
+
+  /* jeg sætter mine bokse på forsiden i grid */
+  .bokse {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  a.boks {
+    display: block;
+    background-color: #742921;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+    font-family: "work";
+    text-decoration: none;
   }
 }

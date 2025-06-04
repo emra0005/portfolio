@@ -49,18 +49,6 @@ h5 {
   text-align: center;
 }
 
-/* jeg style mine bokse på forsiden */
-.boks a {
-  text-decoration: none;
-  background-color: #742921;
-  color: white;
-  text-align: center;
-  border-radius: 10px;
-  padding: 40px;
-  font-family: "work";
-  font-size: large;
-}
-
 /* jeg styler mine kasser på om mig */
 .kasse {
   background-color: #e9e5e1;
@@ -99,4 +87,5 @@ h5 {
   border-radius: 1rem;
   box-shadow: 5px 5px 5px grey;
   outline: solid 2px #742921;
+  text-align: center;
 }
