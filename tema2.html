@@ -3,17 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="img/favi1.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/favi1.png" />
+    <link rel="shortcut icon" href="img/favi1.png" />
+    <link rel="apple-touch-icon" sizes="" href="img/favi1.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Tema 2</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!--jeg inkludere min header med JavaScript -->
+    <div id="header"></div>
+
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+
     <main>
-      <h2>tema2</h2>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
-        vitae ipsam praesentium ea aperiam libero et, iste, recusandae tempore
-        voluptatibus similique molestias rem dignissimos voluptas error mollitia
-        nobis architecto sequi.
-      </p>
+      <section>
+        <h2>GRUNDLÆGGENDE WEB</h2>
+        <!-- min knap tilbage -->
+        <a href="/projekter.html">GO BACK</a>
+
+        <button onclick="history.back()">Go Back</button>
+
+        <article class="article">
+          <!-- min tema beskrivelse -->
+          <h3>Webdesign og kodning</h3>
+          <!-- min tekst / læring fra temaet -->
+          <p>
+            I tema 2 blev jeg introduceret til VS code, HTML og CSS samt
+            designprincipper som gestaltlove.
+          </p>
+          <p>
+            Jeg lærte at arbejde med grid, flex, media queries og responsivt
+            design med mobile first-tilgang, samt wireframes og styletiles.
+          </p>
+          <p>
+            Jeg arbejdede med tekstopsætning, billedformater, ophavsret og
+            semantisk HTML.
+          </p>
+          <p>Jeg lærte at bruge Git og validerede mit kode.</p>
+          <h4>Projekter</h4>
+        </article>
+
+        <!-- mine link til mine projekter på de forskellige temaer -->
+        <div class="btn3">
+          <a class="btn" href="https://emilierasmussen.dk/website/index.html"
+            >Mobil site-></a
+          >
+        </div>
+      </section>
     </main>
   </body>
+  <!-- burgermenu  -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("nav-links");
+      menu.classList.toggle("active");
+    }
+  </script>
 </html>

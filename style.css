@@ -90,6 +90,14 @@ a.boks {
   text-decoration: none;
 }
 
+/* mine under overskrifter i article, efter fx ux/ul */
+h4 {
+  color: #742921;
+  font-family: "mont";
+  text-align: center;
+  font-size: 20px;
+}
+
 /* OM MIG - MOBIL*/
 /* MIT KÆMÆÆÆPE NAVN */
 h5 {
@@ -150,6 +158,42 @@ h5 {
   font-family: "work";
   font-size: large;
 }
+
+/* KNAPPER */
+.btn {
+  display: inline-block;
+  background-color: white;
+  color: #742921;
+  text-decoration: none;
+  padding: 1rem;
+  font-family: "mont";
+  border-radius: 1rem;
+  box-shadow: 5px 5px 5px grey;
+  outline: solid 2px #742921;
+  text-align: center;
+}
+/* Min knap centrerer sig i midten under mine to kasser OM MIG */
+.btn3 {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+/* Tema beskrivelse sider */
+/* jeg får mine p'er ind i midten af artiklen */
+.article {
+  max-width: 700px;
+  /* centrer containeren */
+  margin: 0 auto;
+  /* luft fra siderne */
+  padding: 0 2rem;
+}
+.article p {
+  /* mellemrum mellem mine p'er */
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+h4
 
 /* DESKTOP VERSION MED MEDIA */
 
@@ -216,25 +260,5 @@ h5 {
     align-items: center;
     gap: 20px;
     text-align: center;
-  }
-
-  /* KNAPPER */
-  .btn {
-    display: inline-block;
-    background-color: white;
-    color: #742921;
-    text-decoration: none;
-    padding: 1rem;
-    font-family: "mont";
-    border-radius: 1rem;
-    box-shadow: 5px 5px 5px grey;
-    outline: solid 2px #742921;
-    text-align: center;
-  }
-  /* Min knap centrerer sig i midten under mine to kasser OM MIG */
-  .btn3 {
-    display: flex;
-    justify-content: center;
-    padding: 15px;
   }
 }

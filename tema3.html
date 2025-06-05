@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="img/favi1.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/favi1.png" />
+    <link rel="shortcut icon" href="img/favi1.png" />
+    <link rel="apple-touch-icon" sizes="" href="img/favi1.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Tema 3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!--jeg inkludere min header med JavaScript -->
+  <div id="header"></div>
+
+  <script>
+    fetch("header.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("header").innerHTML = data;
+      });
+  </script>
+
+  <body>
+    <main>
+      <section>
+        <h2>GRUNDLÆGGENDE UX/UI</h2>
+        <!-- min knap tilbage -->
+        <a href="/projekter.html">GO BACK</a>
+
+        <button onclick="history.back()">Go Back</button>
+
+        <article class="article">
+          <!-- min tema beskrivelse -->
+          <h3>Ideudvikling og test</h3>
+          <!-- min tekst / læring fra temaet -->
+          <p>
+            I tema 3 arbejdede jeg med ideudvikling via moodboards, user stories
+            og prototyping.
+          </p>
+          <p>
+            Jeg lærte at teste mit site med tænkehøjt-test, 5-sekunders-test og
+            Lighthouse.
+          </p>
+          <p>
+            Jeg blev klogere på analyse af testresultater og tilpasning af mit
+            design derefter
+          </p>
+          <p>
+            Derudover udviklede jeg mit site ud fra prototyper og
+            layoutdiagrammer og implementerede et favicon.
+          </p>
+        </article>
+
+        <!-- mine link til mine projekter på de forskellige temaer -->
+        <div class="btn3">
+          <a
+            class="btn"
+            href="https://emilierasmussen.dk/konaktepenails/index.html"
+            >Emne site-></a
+          >
+        </div>
+
+        <div class="btn3">
+          <a
+            class="btn"
+            href="https://www.figma.com/design/tguNAMpLSInren1ddnHc5P/EMNESITE---Konaktepenails?node-id=0-1&t=Y1KOuebSVo7Ha9xI-1"
+            >Se min proces-></a
+          >
+        </div>
+      </section>
+    </main>
+  </body>
+  <!-- burgermenu  -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("nav-links");
+      menu.classList.toggle("active");
+    }
+  </script>
+</html>

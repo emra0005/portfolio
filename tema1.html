@@ -3,21 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="img/favi1.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/favi1.png" />
+    <link rel="shortcut icon" href="img/favi1.png" />
+    <link rel="apple-touch-icon" sizes="" href="img/favi1.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Tema 1</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+  <!--jeg inkludere min header med JavaScript -->
+  <div id="header"></div>
+
+  <script>
+    fetch("header.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("header").innerHTML = data;
+      });
+  </script>
+
   <body>
     <main>
-      <h2>tema1</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quisquam
-        voluptatem nam quidem, eligendi quod quia porro odit quasi ipsa aliquam
-        placeat blanditiis asperiores error, fuga, voluptate fugiat incidunt
-        laudantium!
-      </p>
+      <section>
+        <h2>INTROUGE</h2>
+        <!-- min knap tilbage -->
+        <a href="/projekter.html">GO BACK</a>
+
+        <button onclick="history.back()">Go Back</button>
+
+        <article class="article">
+          <!-- min tema beskrivelse -->
+          <h3>Figma og Imovie</h3>
+          <!-- min tekst / læring fra temaet -->
+          <p>
+            Jeg lærte at arbejde med design i Figma og hvordan man overfører
+            filer via FileZilla til eget domæne.
+          </p>
+          <p>Derudover arbejdede jeg med videoredigering i iMovie.</p>
+          <p>
+            Jeg fik styr på strukturering af digitale projekter og grundlæggende
+            publicering af websites.
+          </p>
+          <p></p>
+        </article>
+
+        <!-- mine link til mine projekter på de forskellige temaer -->
+        <div class="btn3">
+          <a class="btn" href="https://www.youtube.com/watch?v=3ysjAO1DG5o"
+            >Imovie video-></a
+          >
+        </div>
+
+        <div class="btn3">
+          <a
+            class="btn"
+            href=" https://www.figma.com/board/C5KrlQsKA7wHL02UXjBhHK/Pr%C3%A6sentationskort?node-id=0-1&t=7DRtIyx3wrkL1vkn-1"
+            >Præsentationskort-></a
+          >
+        </div>
+      </section>
     </main>
   </body>
 
-  <a href="/projekter.html">GO BACK</a>
-
-  <button onclick="history.back()">Go Back</button>
+  <!-- burgermenu  -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("nav-links");
+      menu.classList.toggle("active");
+    }
+  </script>
 </html>

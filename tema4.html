@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="img/favi1.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/favi1.png" />
+    <link rel="shortcut icon" href="img/favi1.png" />
+    <link rel="apple-touch-icon" sizes="" href="img/favi1.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Tema 4</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!--jeg inkludere min header med JavaScript -->
+  <div id="header"></div>
+
+  <script>
+    fetch("header.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("header").innerHTML = data;
+      });
+  </script>
+
+  <body>
+    <main>
+      <section>
+        <h2>GRUNDLÆGGENDE ANIMATION</h2>
+        <!-- min knap tilbage -->
+        <a href="/projekter.html">GO BACK</a>
+
+        <button onclick="history.back()">Go Back</button>
+
+        <article class="article">
+          <!-- min tema beskrivelse -->
+          <h3>Infografik og JavaScript</h3>
+          <!-- min tekst / læring fra temaet -->
+          <p>
+            I tema 4 lærte jeg at lave infografik med SVG og arbejde med
+            vektorgrafik.
+          </p>
+          <p>Jeg brugte papirskitser og lavede simple paper prototypes.</p>
+          <p>
+            Jeg blev introduceret og arbejde med JavaScript med funktioner og
+            events
+          </p>
+          <p>Jeg lavede HTML-forms og arbejdede med dark/light mode.</p>
+        </article>
+
+        <!-- mine link til mine projekter på de forskellige temaer -->
+        <div class="btn3">
+          <a
+            class="btn"
+            href="http://emilierasmussen.dk/emergency-main/instruction.html"
+            >Emergency site-></a
+          >
+        </div>
+
+        <div class="btn3">
+          <a
+            class="btn"
+            href="https://www.figma.com/design/jIAjpdMsT01CxDp3sQWUec/D%C3%B8delige-parasitter-florerer-i-hundeg%C3%A5rde?node-id=0-1&t=MZ5erZMPIS1N4HuY-1"
+            >Se min proces-></a
+          >
+        </div>
+      </section>
+    </main>
+  </body>
+  <!-- burgermenu  -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("nav-links");
+      menu.classList.toggle("active");
+    }
+  </script>
+</html>

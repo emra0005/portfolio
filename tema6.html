@@ -3,9 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="img/favi1.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/favi1.png" />
+    <link rel="shortcut icon" href="img/favi1.png" />
+    <link rel="apple-touch-icon" sizes="" href="img/favi1.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Tema 6</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+
+  <!--jeg inkludere min header med JavaScript -->
+  <div id="header"></div>
+
+  <script>
+    fetch("header.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("header").innerHTML = data;
+      });
+  </script>
+
+  <body>
+    <main>
+      <section>
+        <h2>Portfolio</h2>
+        <!-- min knap tilbage -->
+        <a href="/projekter.html">GO BACK</a>
+
+        <button onclick="history.back()">Go Back</button>
+
+        <article class="article">
+          <!-- min tema beskrivelse -->
+          <h3>Site og proces</h3>
+          <!-- min tekst / læring fra temaet -->
+          <p>
+            I sidste tema har jeg her udviklet mit eget webiste fra bunden og
+            brugt det jeg har lært gennem de forskellige temaer.
+          </p>
+          <p>
+            Jeg har integreret design, kodning, test og visuelle elementer, ud
+            fra min læring jeg har fået på første semester.
+          </p>
+          <p>Min proces og udvikling kan ses via link herunder.</p>
+          <p></p>
+        </article>
+
+        <!-- mine link til mine projekter på de forskellige temaer -->
+        <div class="btn3">
+          <a
+            class="btn"
+            href="https://www.figma.com/design/1prJiVwxab9k3vHhdlvV4N/EKSAMEN-1-SEMESTER?node-id=0-1&t=8EnTm62GgWaYkX9v-1"
+            >Se min proces</a
+          >
+        </div>
+      </section>
+    </main>
+  </body>
   <!-- burgermenu  -->
   <script>
     function toggleMenu() {
