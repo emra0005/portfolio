@@ -13,7 +13,10 @@
         <div class="logo">
           <img src="img/portfolio.png" alt="Logo" />
         </div>
-        <ul>
+        <!-- jeg laver min burger klik -->
+        <button class="burger" onclick="toggleMenu()">=</button>
+        <!-- jeg giver en id eller class her så jeg kan vise/skjule menuen med js -->
+        <ul id="nav-links">
           <li><a href="index.html">FORSIDE</a></li>
           <li><a href="ommig.html">OM MIG</a></li>
           <li><a href="projekter.html">PROJEKTER</a></li>
@@ -21,4 +24,13 @@
       </nav>
     </header>
   </body>
+
+  <!-- togglemenu aktiveres når jeg klikker på burgerknappen, så den tilføjer ligesom eller fjerner klassen active som i mit css styrer om menuen skal vises -->
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("nav-links");
+      menu.classList.toggle("active");
+    }
+  </script>
 </html>

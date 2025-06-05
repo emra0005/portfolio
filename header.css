@@ -31,8 +31,43 @@ ul li a {
 }
 
 /* Logo */
-/* jeg tilpasser mit logo */
-.logo {
-  width: 150px;
-  height: 150px;
+/* jeg tilpasser mit logo mangler */
+.logo img {
+  max-width: 20%;
+  /* max-height: 80px; */
+}
+
+/* så jeg kan styre mobil layoutet og burgermenuen her */
+
+.burger {
+  /* menuen skjules "display none"  */
+  display: none;
+  font-size: 4rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #742921;
+  /* skubber burgerknap helt til højre */
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  /* menuen vises med active */
+  #nav-links.active {
+    display: flex;
+  }
+  .menubar {
+    /* overvej skift til row, logo fylder for meget */
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
