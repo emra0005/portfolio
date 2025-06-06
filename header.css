@@ -9,13 +9,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 0;
-  background-color: #e9e5e1;
-}
-
-.logo {
-  font-family: "work";
-  font-size: 1.5rem;
-  color: #742921;
+  margin: 1rem;
+  background-color: #f7f3e2;
 }
 
 ul {
@@ -28,14 +23,19 @@ ul {
 ul li a {
   text-decoration: none;
   font-family: "work";
-  color: #742921;
+  color: #009844;
+  transition: all 0.3s ease-out;
+}
+ul li a:hover {
+  color: #f35197;
 }
 
 /* Logo */
 /* jeg tilpasser mit logo mangler */
 .logo img {
-  max-width: 20%;
-  /* max-height: 80px; */
+  max-width: 15%;
+  margin: 10px;
+  margin-left: 20px;
 }
 
 /* så jeg kan styre mobil layoutet og burgermenuen her */
@@ -47,7 +47,7 @@ ul li a {
   background: none;
   border: none;
   cursor: pointer;
-  color: #742921;
+  color: #009844;
   /* skubber burgerknap helt til højre */
   margin-left: auto;
 }
@@ -63,9 +63,9 @@ ul li a {
     margin-top: 1rem;
     align-items: flex-end;
     /* virker kun indenfor containterens bredde? derfor den drillede måske */
-    text-align: right;
-    width: 100%;
-    padding-right: 4rem;
+    /* text-align: right; */
+    /* width: 100%; */
+    /* padding-right: 4rem; */
   }
   /* menuen vises med active */
   #nav-links.active {
@@ -73,8 +73,11 @@ ul li a {
   }
 
   .menubar {
-    /* overvej skift til row, logo fylder for meget */
-
-    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo img {
+    max-width: 12%;
   }
 }

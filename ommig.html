@@ -4,16 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- favicon -->
-    <link rel="icon" type="image/png" href="img/favi1.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="img/favi1.png" />
-    <link rel="shortcut icon" href="img/favi1.png" />
-    <link rel="apple-touch-icon" sizes="" href="img/favi1.png" />
+    <link rel="icon" type="image/png" href="img/nyny.svg" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/nyny.svg" />
+    <link rel="shortcut icon" href="img/nyny.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/nyny.svg" />
     <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- får min footer ikoner til at virke -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
     <title>Om mig</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="layout.css" />
     <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
   </head>
 
   <body>
@@ -54,35 +61,32 @@
           </p>
         </div>
         <div class="mig">
-          <img src="img/emr.webp" alt="billede" />
+          <img src="img/pc.JPG" alt="billede" />
         </div>
       </section>
 
-      <section>
-        <h2>Kea ?? evt tekst her</h2>
+      <section class="cv">
+        <h2>CV</h2>
+        <details>
+          <summary>Udannelse</summary>
+
+          <p>2020 - 2022 | Multimediedesign | KEA Københavns Erhvervsakademi</p>
+          <p>2020 - 2022 | Multimediedesign | KEA Københavns Erhvervsakademi</p>
+        </details>
+
+        <details>
+          <summary>Arbejde</summary>
+          <p>2020 - 2022 | Multimediedesign | KEA Københavns Erhvervsakademi</p>
+          <p>2020 - 2022 | Multimediedesign | KEA Københavns Erhvervsakademi</p>
+        </details>
+
+        <details>
+          <summary>Kompetencer</summary>
+          <p>2020 - 2022 | Multimediedesign | KEA Københavns Erhvervsakademi</p>
+          <p>2020 - 2022 | Multimediedesign | KEA Københavns Erhvervsakademi</p>
+        </details>
       </section>
 
-      <!-- erhverserfaring og 1 semester -->
-      <section class="kasser">
-        <div class="kasse">
-          <h3>Inden multimedie design?</h3>
-          <li>Servicemedarbejder på mcdonalds</li>
-          <li>Håndboldtræner</li>
-          <li>Selvstændig negleteknikker siden 2019</li>
-        </div>
-        <div class="kasse">
-          <h3>Hvad tager jeg med fra 1 semester?</h3>
-          <p>
-            På første semester af multimediedesign har jeg fået en bred
-            introduktion til design og digitale medier. <br />Jeg har lært
-            grundlæggende grafisk design, arbejdet med Adobe-programmer som
-            Photoshop og Illustrator, og fået indsigt i UX/UI-design. Derudover
-            har jeg stiftet bekendtskab med webudvikling - herunder HTML, CSS og
-            lidt JavaScript - samt arbejdet med idéudvikling, konceptudvikling
-            og samarbejde i projektforløb.
-          </p>
-        </div>
-      </section>
       <section>
         <div class="btn3">
           <a class="btn" href="projekter.html"
@@ -91,12 +95,37 @@
         </div>
       </section>
 
-      <section><h2>TEKST HER</h2></section>
+      <section>
+        <h2>TEKST HER</h2>
+
+        <div class="billederække">
+          <img src="img/pink.JPG" alt="billede 1" />
+          <img src="img/pink.JPG" alt="billede 2" />
+          <img src="img/pink.JPG" alt="billede 3" />
+          <img src="img/pink.JPG" alt="billede 4" />
+        </div>
+      </section>
 
       <!-- Billede collage her??? -->
       <section></section>
     </main>
   </body>
+  <footer>
+    <p>
+      <a
+        href="https://www.facebook.com/profile.php?id=100009255955648"
+        target="_blank"
+      >
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/emiliemrasmussen/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </p>
+
+    <p>Copyright © 2025 Emilie Rasmussen</p>
+  </footer>
+
   <!-- burgermenu  -->
   <script>
     function toggleMenu() {
