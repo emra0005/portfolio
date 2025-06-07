@@ -4,6 +4,19 @@
   src: url(fonte/Montserrat-ExtraBold.ttf);
 }
 
+/* jeg får mit logo til at slide in */
+.slideIn {
+  animation: slideIn 0.5s linear;
+}
+@keyframes slideIn {
+  from {
+    transform: translate(-100%, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
 .menubar {
   display: flex;
   justify-content: space-between;
@@ -62,10 +75,6 @@ ul li a:hover {
     gap: 1rem;
     margin-top: 1rem;
     align-items: flex-end;
-    /* virker kun indenfor containterens bredde? derfor den drillede måske */
-    /* text-align: right; */
-    /* width: 100%; */
-    /* padding-right: 4rem; */
   }
   /* menuen vises med active */
   #nav-links.active {

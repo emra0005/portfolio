@@ -41,7 +41,7 @@ h2 {
 }
 
 p {
-  color: #742921;
+  color: black;
   font-family: "work-tynd";
 }
 
@@ -81,13 +81,12 @@ h5 {
 }
 a.boks {
   display: block;
-  background-color: #742921;
+  background-color: #fe7f41;
   color: white;
   text-align: center;
   padding: 3rem;
   margin-left: 80px;
   margin-right: 80px;
-  border-radius: 10px;
   font-family: "work";
   text-decoration: none;
 }
@@ -106,6 +105,9 @@ a.boks {
   justify-content: space-between;
   align-items: left;
 }
+.mellemrum h2 {
+  color: #f7f3e2;
+}
 /* styler mine 5 hurtige */
 .mellemrum li {
   color: #f7f3e2;
@@ -119,6 +121,9 @@ a.boks {
   margin-top: 30px;
   max-width: 50%;
   border-radius: 20px;
+}
+.mellemrum {
+  align-items: center;
 }
 
 /* mine under overskrifter i article, efter fx ux/ul */
@@ -141,7 +146,10 @@ h4 {
 }
 .mig img {
   max-width: 60%;
-  margin: 10px;
+  /* centrer billedet horisontalt */
+  margin: 20px auto;
+  /* nødvendig for min margi auto virker, normalt inline */
+  display: block;
   border-radius: 280px;
 }
 .grid_2-1 {
@@ -158,6 +166,7 @@ h4 {
 }
 .cv h2 {
   text-align: start;
+  padding: 0;
 }
 
 /* laver streg under/inddeler */
@@ -167,46 +176,65 @@ details {
 }
 summary
 
+
+
 /* PROJEKTER - MOBIL */
 /* jeg styler mine tema kasser i projekter */
 
 .temaer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 50px;
-  gap: 50px;
-  text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 30px;
+  justify-items: center;
 }
 
 .tema {
-  text-decoration: none;
   background-color: #fe7f41;
   color: white;
   text-align: center;
-  border-radius: 10px;
-  padding: 40px;
+  padding: 30px 20px;
   font-family: "work";
   font-size: large;
-  max-width: 15%;
-  justify-self: center;
-
-  /* tilføjer dette for centreret tekst i midten, text-align centrerer horisontalt, så jeg mangler lodret inde centrerings */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  max-width: 300px;
+  border-radius: 10px;
 }
 
 .tema a {
   text-decoration: none;
   color: white;
-  text-align: center;
   font-family: "work";
   font-size: large;
 }
 
 /* KNAPPER */
 .btn {
+  display: inline-block;
+  background-color: #f35197;
+  color: #f7f3e2;
+  text-decoration: none;
+  padding: 10px;
+  font-family: "mont";
+  border-radius: 1rem;
+  box-shadow: 5px 5px 5px grey;
+  text-align: center;
+}
+
+/* min første orange knap */
+.btn1 {
+  display: inline-block;
+  background-color: #fe7f41;
+  color: #f7f3e2;
+  text-decoration: none;
+  padding: 10px;
+  font-family: "mont";
+  border-radius: 1rem;
+  box-shadow: 5px 5px 5px grey;
+  text-align: center;
+}
+/* min anden knap på en personlig tilgang */
+.btn2 {
   display: inline-block;
   background-color: #f7f3e2;
   color: #f35197;
@@ -216,12 +244,24 @@ summary
   border-radius: 1rem;
   box-shadow: 5px 5px 5px grey;
   text-align: center;
+  /* centrerer knappen */
+  margin: 0 auto;
 }
 /* Min knap centrerer sig i midten under mine to kasser OM MIG */
 .btn3 {
   display: flex;
   justify-content: center;
   padding: 15px;
+}
+/* styler min go back knap  */
+.goback p {
+  display: inline-block;
+  color: #009844;
+  width: 20%;
+  font-size: xx-large;
+  padding-left: 70px;
+
+  /* font-size: xx-large; */
 }
 
 /* Tema beskrivelse sider */
@@ -239,6 +279,19 @@ summary
   line-height: 1.6;
 }
 
+/* får mit billede af mig til at fadein */
+
+.fadeIn {
+  animation: fadeIn 1s linear;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /* DESKTOP VERSION MED MEDIA */
 
 @media (min-width: 768px) {
@@ -266,7 +319,6 @@ summary
     padding: 3rem;
     margin-left: 50px;
     margin-right: 50px;
-    border-radius: 10px;
     font-family: "work";
     text-decoration: none;
   }
@@ -282,6 +334,7 @@ summary
     justify-content: space-between;
     align-items: center;
   }
+  /* forside billede */
   .hvemerjeg img {
     max-width: 50%;
   }
@@ -326,10 +379,10 @@ summary
 
   .temaer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 50px;
-    margin: 0;
+    padding: 40px;
     text-align: center;
   }
 }
