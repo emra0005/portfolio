@@ -1,16 +1,18 @@
 /* Mine fonte */
+
+/* h2 */
 @font-face {
-  font-family: "bunge";
-  src: url(fonte/Bungee-Regular.ttf);
+  font-family: "pop";
+  src: url(fonte/Poppins-SemiBold.ttf);
 }
+
+/* til mine h2 h3 */
 @font-face {
-  font-family: "mont";
-  src: url(fonte/Montserrat-ExtraBold.ttf);
+  font-family: "monoton";
+  src: url(fonte/Monoton-Regular.ttf);
 }
-@font-face {
-  font-family: "work";
-  src: url(fonte/WorkSans-Regular.ttf);
-}
+
+/* til min brødtekst */
 @font-face {
   font-family: "work-tynd";
   src: url(fonte/WorkSans-Regular.ttf);
@@ -30,14 +32,19 @@ body {
   margin: 0;
 }
 
-/* h2 = mine overskrifter med tydelig baggrund  */
 h2 {
   color: #009844;
-  /* background-color: #742921; */
   padding: 1.5rem;
   text-align: center;
-  font-family: "work";
+  font-family: "pop";
   font-size: x-large;
+}
+
+h3 {
+  color: #f35197;
+  text-align: center;
+  font-family: "pop";
+  font-size: large;
 }
 
 p {
@@ -45,29 +52,37 @@ p {
   font-family: "work-tynd";
 }
 
-h3 {
-  color: #009844;
-  text-align: center;
-  font-family: "mont";
-}
-
-h5 {
-  color: #f35197;
-  font-family: "mont";
-  text-align: center;
-  margin: 10px;
-  font-size: 45px;
-}
-
 /* MOBIL FIIIIIIRRRRRRSSSTTTT */
 /* Husk nu E alt herfra og ind til @me gælder KUN op til og med 768px bredde:) */
 
 /* FORSIDE - MOBIL */
 /* min hero section */
+@media (max-width: 768px) {
+  h1 {
+    color: #f35197;
+    font-family: "monoton";
+    text-align: center;
+    margin: 10px;
+    font-size: 50px;
+  }
+}
+
 .hero {
-  background-color: white;
-  padding: 10rem;
+  background-color: #f7f3e2;
+  padding: 5rem;
   text-align: center;
+}
+.hero h1 {
+  font-family: "monoton";
+  font-size: 100px;
+  color: #f35197;
+}
+.lilleintro h3 {
+  color: #f35197;
+  font-size: large;
+  text-align: center;
+  outline: solid 2px #f35197;
+  padding: 1rem;
 }
 
 /* Mine site bokse styles og sættes i grid */
@@ -77,18 +92,22 @@ h5 {
   gap: 1rem;
   max-width: 600px;
   margin: 0 auto;
-  padding: 1rem;
 }
 a.boks {
   display: block;
   background-color: #fe7f41;
   color: white;
   text-align: center;
-  padding: 3rem;
   margin-left: 80px;
   margin-right: 80px;
-  font-family: "work";
+  font-family: "pop";
   text-decoration: none;
+  border-radius: 10px;
+  padding: 60px 20px;
+}
+
+.orange h2 {
+  color: #fe7f41;
 }
 
 .hvemerjeg {
@@ -111,10 +130,9 @@ a.boks {
 /* styler mine 5 hurtige */
 .mellemrum li {
   color: #f7f3e2;
-  /* margin: 0 auto; */
-  font-size: large;
+  font-size: 20px;
   font-family: "worktynd";
-  align-items: left;
+  gap: 1rem;
 }
 
 .hvemerjeg img {
@@ -124,14 +142,6 @@ a.boks {
 }
 .mellemrum {
   align-items: center;
-}
-
-/* mine under overskrifter i article, efter fx ux/ul */
-h4 {
-  color: #f35197;
-  font-family: "mont";
-  text-align: center;
-  font-size: 20px;
 }
 
 /* OM MIG */
@@ -180,7 +190,6 @@ summary
 
 /* PROJEKTER - MOBIL */
 /* jeg styler mine tema kasser i projekter */
-
 .temaer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -192,20 +201,20 @@ summary
 
 .tema {
   background-color: #fe7f41;
-  color: white;
   text-align: center;
-  padding: 30px 20px;
+  padding: 60px 20px;
   font-family: "work";
   font-size: large;
   max-width: 300px;
   border-radius: 10px;
+  outline: solid 2px #fe7f41;
 }
 
 .tema a {
   text-decoration: none;
-  color: white;
-  font-family: "work";
-  font-size: large;
+  color: #f7f3e2;
+  font-family: "pop";
+  font-size: 30px;
 }
 
 /* KNAPPER */
@@ -215,7 +224,7 @@ summary
   color: #f7f3e2;
   text-decoration: none;
   padding: 10px;
-  font-family: "mont";
+  font-family: "pop";
   border-radius: 1rem;
   box-shadow: 5px 5px 5px grey;
   text-align: center;
@@ -228,7 +237,7 @@ summary
   color: #f7f3e2;
   text-decoration: none;
   padding: 10px;
-  font-family: "mont";
+  font-family: "pop";
   border-radius: 1rem;
   box-shadow: 5px 5px 5px grey;
   text-align: center;
@@ -240,7 +249,7 @@ summary
   color: #f35197;
   text-decoration: none;
   padding: 10px;
-  font-family: "mont";
+  font-family: "pop";
   border-radius: 1rem;
   box-shadow: 5px 5px 5px grey;
   text-align: center;
@@ -292,10 +301,19 @@ summary
     opacity: 1;
   }
 }
+
 /* DESKTOP VERSION MED MEDIA */
 
 @media (min-width: 768px) {
   /* FORSIDE - desktop */
+
+  h1 {
+    color: #f35197;
+    font-family: "monoton";
+    text-align: center;
+    margin: 10px;
+    font-size: 100px;
+  }
 
   /* Jeg sætter mine bokse på forsiden i grid */
   .bokse {
@@ -316,11 +334,11 @@ summary
     background-color: #fe7f41;
     color: white;
     text-align: center;
-    padding: 3rem;
     margin-left: 50px;
     margin-right: 50px;
     font-family: "work";
     text-decoration: none;
+    padding: 40px 80px;
   }
   .hvemerjeg {
     display: grid;
