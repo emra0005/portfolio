@@ -67,16 +67,10 @@ p {
   }
 }
 
-.hero {
-  background-color: #f7f3e2;
-  padding: 5rem;
-  text-align: center;
+.forside h1 {
+  padding: 70px;
 }
-.hero h1 {
-  font-family: "monoton";
-  font-size: 100px;
-  color: #f35197;
-}
+
 .lilleintro h3 {
   color: #f35197;
   font-size: large;
