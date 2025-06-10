@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex"/>
     <!-- favicon -->
     <link rel="icon" type="image/png" href="img/nyny.svg" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="img/nyny.svg" />
@@ -18,7 +19,9 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="footer.css" />
   </head>
-  <!--jeg inkludere min header med JavaScript -->
+
+  <body>
+      <!--jeg inkludere min header med JavaScript -->
   <div id="header"></div>
 
   <script>
@@ -28,8 +31,6 @@
         document.getElementById("header").innerHTML = data;
       });
   </script>
-
-  <body>
     <main>
       <section>
         <h2>GRUNDLÆGGENDE UX/UI</h2>
@@ -78,8 +79,7 @@
         <br />
       </section>
     </main>
-  </body>
-  <footer>
+      <footer>
     <p>
       <a
         href="https://www.facebook.com/profile.php?id=100009255955648"
@@ -102,4 +102,6 @@
       menu.classList.toggle("active");
     }
   </script>
+  </body>
+
 </html>

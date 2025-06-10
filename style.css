@@ -32,12 +32,20 @@ body {
   margin: 0;
 }
 
+h1 {
+  color: #f35197;
+  font-family: "monoton";
+  text-align: center;
+  margin: 10px;
+  font-size: 50px;
+}
+
 h2 {
   color: #009844;
   padding: 1.5rem;
   text-align: center;
   font-family: "pop";
-  font-size: x-large;
+  font-size: xx-large;
 }
 
 h3 {
@@ -45,6 +53,12 @@ h3 {
   text-align: center;
   font-family: "pop";
   font-size: large;
+}
+.lilleintro h3 {
+  font-size: small;
+  text-align: center;
+  outline: solid 2px #f35197;
+  padding: 1rem;
 }
 
 p {
@@ -57,53 +71,51 @@ p {
 
 /* FORSIDE - MOBIL */
 /* min hero section */
-@media (max-width: 768px) {
-  h1 {
-    color: #f35197;
-    font-family: "monoton";
-    text-align: center;
-    margin: 10px;
-    font-size: 50px;
-  }
-}
 
-.forside h1 {
-  padding: 70px;
+.portfolio-animation {
+  width: 100%;
 }
-
-.lilleintro h3 {
-  color: #f35197;
-  font-size: large;
+.animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  outline: solid 2px #f35197;
-  padding: 1rem;
+  padding: 4rem;
+}
+.portfolio-animation {
+  max-width: none;
+  height: auto;
+  transform: scale(1.5);
 }
 
 /* Mine site bokse styles og sættes i grid */
+
 .bokse {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  max-width: 600px;
-  margin: 0 auto;
 }
+
 a.boks {
-  display: block;
+  /* display: block; */
   background-color: #fe7f41;
   color: white;
   text-align: center;
   margin-left: 80px;
   margin-right: 80px;
   font-family: "pop";
+  font-size: large;
   text-decoration: none;
   border-radius: 10px;
   padding: 60px 20px;
+  box-shadow: 5px 5px 5px grey;
 }
 
 .orange h2 {
   color: #fe7f41;
 }
 
+/* en personlig tilgang */
 .hvemerjeg {
   display: grid;
   grid-template-columns: 1fr;
@@ -111,29 +123,37 @@ a.boks {
   padding-bottom: 50px;
   background-color: #f35197;
 }
+
+/* mellem "iderig" osv og cta */
 /* skubber knap i bund */
 .mellemrum {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: left;
 }
 .mellemrum h2 {
   color: #f7f3e2;
-}
-/* styler mine 5 hurtige */
-.mellemrum li {
-  color: #f7f3e2;
-  font-size: 20px;
-  font-family: "worktynd";
-  gap: 1rem;
+  padding: 0;
 }
 
+/* styler mine "iderig" "krativ" "nysgerrig" */
+.mellemrum p {
+  display: flex;
+  flex-direction: column;
+  color: #f7f3e2;
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: "work-tynd";
+}
+
+/* En personlig tilgang billede  */
 .hvemerjeg img {
   margin-top: 30px;
   max-width: 50%;
   border-radius: 20px;
 }
+
+/* Får min iderig, kreativ, nysgerrig placeret i midten */
 .mellemrum {
   align-items: center;
 }
@@ -148,6 +168,7 @@ a.boks {
 .billederække img {
   max-width: 100%;
 }
+
 .mig img {
   max-width: 60%;
   /* centrer billedet horisontalt */
@@ -157,16 +178,14 @@ a.boks {
   border-radius: 280px;
 }
 .grid_2-1 {
-  margin-left: 10px;
-  padding-left: 10px;
+  text-align: center;
 }
+
 /* MIN CV SEKTION */
 .cv {
-  font-family: "work";
+  font-family: "pop";
   color: #f35197;
   padding: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 .cv h2 {
   text-align: start;
@@ -178,19 +197,12 @@ details {
   border-bottom: 2px solid #f35197;
   padding: 10px;
 }
-summary
 
-
-
-/* PROJEKTER - MOBIL */
-/* jeg styler mine tema kasser i projekter */
 .temaer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  justify-content: center;
-  padding: 40px 20px;
-  gap: 30px;
-  justify-items: center;
+  grid-template-columns: 1fr;
+  padding: 90px 20px;
+  gap: 50px;
 }
 
 .tema {
@@ -199,9 +211,8 @@ summary
   padding: 60px 20px;
   font-family: "work";
   font-size: large;
-  max-width: 300px;
   border-radius: 10px;
-  outline: solid 2px #fe7f41;
+  box-shadow: 5px 5px 5px grey;
 }
 
 .tema a {
@@ -219,6 +230,7 @@ summary
   text-decoration: none;
   padding: 10px;
   font-family: "pop";
+  font-size: large;
   border-radius: 1rem;
   box-shadow: 5px 5px 5px grey;
   text-align: center;
@@ -232,6 +244,7 @@ summary
   text-decoration: none;
   padding: 10px;
   font-family: "pop";
+  font-size: large;
   border-radius: 1rem;
   box-shadow: 5px 5px 5px grey;
   text-align: center;
@@ -244,6 +257,7 @@ summary
   text-decoration: none;
   padding: 10px;
   font-family: "pop";
+  font-size: large;
   border-radius: 1rem;
   box-shadow: 5px 5px 5px grey;
   text-align: center;
@@ -262,9 +276,7 @@ summary
   color: #009844;
   width: 20%;
   font-size: xx-large;
-  padding-left: 70px;
-
-  /* font-size: xx-large; */
+  padding-left: 80px;
 }
 
 /* Tema beskrivelse sider */
@@ -282,7 +294,7 @@ summary
   line-height: 1.6;
 }
 
-/* får mit billede af mig til at fadein */
+/* får mit billede af mig på "om mig" til at fadein */
 
 .fadeIn {
   animation: fadeIn 1s linear;
@@ -309,71 +321,45 @@ summary
     font-size: 100px;
   }
 
-  /* Jeg sætter mine bokse på forsiden i grid */
-  .bokse {
-    /* display: grid; */
-    grid-template-columns: 1fr 1fr;
+  .lilleintro h3 {
+    font-size: large;
   }
+
   /* Jeg sætter mine bokse på forsiden i grid til desktop version */
   .bokse {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 1rem;
+    gap: 40px;
   }
   a.boks {
-    display: block;
-    background-color: #fe7f41;
-    color: white;
-    text-align: center;
-    margin-left: 50px;
-    margin-right: 50px;
-    font-family: "work";
-    text-decoration: none;
-    padding: 40px 80px;
+    font-size: x-large;
   }
+
+  /* En personlig tilgang DESKTOP*/
   .hvemerjeg {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    text-align: center;
-  }
-  /* skubber knap i bund */
-  .mellemrum {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  /* forside billede */
-  .hvemerjeg img {
-    max-width: 50%;
   }
 
   /* OM MIG - desktop */
-  /* "Hvem er jeg" grid_2-1 section - på "OM MIG" */
+  /* "EMILIE RASMUSSEN" grid_2-1 section - på "OM MIG" */
+
   .grid_2-1 {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    text-align: center;
-    padding-top: 30px;
-    margin-left: 100px;
-    margin-right: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  /* MIN CV SEKTION */
+  .cv {
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   /* Mit kæææmpe navn på om mig*/
   h5 {
     font-size: 100px;
-  }
-
-  /* MIN CV SEKTION */
-  .cv {
-    font-family: "work";
-    color: #f35197;
-    padding: 20px;
-    margin-left: 80px;
-    margin-right: 80px;
   }
 
   /* min billerække på om mig */
@@ -392,7 +378,6 @@ summary
   .temaer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
     gap: 50px;
     padding: 40px;
     text-align: center;

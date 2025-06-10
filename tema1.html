@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
     <!-- favicon -->
     <link rel="icon" type="image/png" href="img/nyny.svg" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="img/nyny.svg" />
@@ -18,18 +19,18 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="footer.css" />
   </head>
-  <!--jeg inkludere min header med JavaScript -->
-  <div id="header"></div>
-
-  <script>
-    fetch("header.html")
-      .then((response) => response.text())
-      .then((data) => {
-        document.getElementById("header").innerHTML = data;
-      });
-  </script>
 
   <body>
+    <!--jeg inkludere min header med JavaScript -->
+    <div id="header"></div>
+
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
     <main>
       <section>
         <h2>INTROUGE</h2>
@@ -67,28 +68,29 @@
         <br />
       </section>
     </main>
+
+    <footer>
+      <p>
+        <a
+          href="https://www.facebook.com/profile.php?id=100009255955648"
+          target="_blank"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/emiliemrasmussen/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </p>
+
+      <p>Copyright © 2025 Emilie Rasmussen</p>
+    </footer>
+
+    <!-- burgermenu  -->
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("nav-links");
+        menu.classList.toggle("active");
+      }
+    </script>
   </body>
-  <footer>
-    <p>
-      <a
-        href="https://www.facebook.com/profile.php?id=100009255955648"
-        target="_blank"
-      >
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://www.instagram.com/emiliemrasmussen/" target="_blank">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </p>
-
-    <p>Copyright © 2025 Emilie Rasmussen</p>
-  </footer>
-
-  <!-- burgermenu  -->
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById("nav-links");
-      menu.classList.toggle("active");
-    }
-  </script>
 </html>

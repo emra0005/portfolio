@@ -25,14 +25,12 @@
         </ul>
       </nav>
     </header>
+    <!-- togglemenu aktiveres når jeg klikker på burgerknappen, så den tilføjer ligesom eller fjerner klassen active som i mit css styrer om menuen skal vises -->
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("nav-links");
+        menu.classList.toggle("active");
+      }
+    </script>
   </body>
-
-  <!-- togglemenu aktiveres når jeg klikker på burgerknappen, så den tilføjer ligesom eller fjerner klassen active som i mit css styrer om menuen skal vises -->
-
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById("nav-links");
-      menu.classList.toggle("active");
-    }
-  </script>
 </html>

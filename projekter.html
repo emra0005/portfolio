@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
     <!-- favicon -->
     <link rel="icon" type="image/png" href="img/nyny.svg" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="img/nyny.svg" />
@@ -16,6 +17,7 @@
     />
 
     <title>Projekter</title>
+    <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="footer.css" />
   </head>
@@ -62,31 +64,37 @@
         <div class="tema">
           <a href="tema6.html">TEMA 6</a>
         </div>
+      </section>
+      <section>
+        <div class="btn3">
+          <a class="btn" href="ommig.html">LIDT OM MIG &rarr;</a>
+        </div>
         <br />
       </section>
     </main>
+
+    <footer>
+      <p>
+        <a
+          href="https://www.facebook.com/profile.php?id=100009255955648"
+          target="_blank"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/emiliemrasmussen/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </p>
+
+      <p>Copyright © 2025 Emilie Rasmussen</p>
+    </footer>
+
+    <!-- burgermenu  -->
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("nav-links");
+        menu.classList.toggle("active");
+      }
+    </script>
   </body>
-  <footer>
-    <p>
-      <a
-        href="https://www.facebook.com/profile.php?id=100009255955648"
-        target="_blank"
-      >
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://www.instagram.com/emiliemrasmussen/" target="_blank">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </p>
-
-    <p>Copyright © 2025 Emilie Rasmussen</p>
-  </footer>
-
-  <!-- burgermenu  -->
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById("nav-links");
-      menu.classList.toggle("active");
-    }
-  </script>
 </html>

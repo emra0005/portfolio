@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex"/>
     <!-- favicon -->
     <link rel="icon" type="image/png" href="img/nyny.svg" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="img/nyny.svg" />
@@ -15,7 +16,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-
     <title>Om mig</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="layout.css" />
@@ -34,13 +34,11 @@
           document.getElementById("header").innerHTML = data;
         });
     </script>
-
     <main>
       <!-- mit navn her -->
       <section>
         <h1>EMILIE RASMUSSEN</h1>
       </section>
-
       <!-- Hej og billede -->
       <section class="grid_2-1">
         <div>
@@ -59,6 +57,7 @@
             kombinere det kreative med nye udfordringer og udvikle mig hele
             tiden.
           </p>
+          <br>
         </div>
         <div class="fadeIn">
         <div class="mig">
@@ -71,7 +70,6 @@
         <h2>CV</h2>
         <details>
           <summary>Udannelse</summary>
-
           <p>2025 - 2027 | Multimediedesign | KEA Københavns Erhvervsakademi</p>
           <p>2023 - 2024 | Ennegrammets grunduddannelse | Enneagramstedet Roskilde</p>
           <p>2020 - 2022 | HF m. Mat/Erhversøkonomi som hovedfag | Espegærde gymnasium</p>
@@ -96,29 +94,26 @@
           <p>-Redesign af hjemmeside</p>
         </details>
       </section>
-
       <section>
         <div class="btn3">
           <a class="btn" href="projekter.html"
-            ><strong>Se mit forløb &rarr;</strong></a
+            >SE MIT FORLØB &rarr;</a
           >
         </div>
         <br>
       </section>
       <section>
         <div class="billederække">
-          <img src="img/solnedgang.png" alt="billede 1" />
-          <img src="img/humle.jpeg" alt="billede 2" />
-          <img src="img/bali.jpg" alt="billede 3" />
-          <img src="img/plantorama.png" alt="billede 4" />
+          <img src="img/solnedgang.webp" alt="billede 1" />
+          <img src="img/tomba.webp" alt="billede 2" />
+          <img src="img/bali.webp" alt="billede 3" />
+          <img src="img/plantorama.webp" alt="billede 4" />
         </div>
       </section>
-
       <!-- Billede collage her??? -->
       <section></section>
     </main>
-  </body>
-  <footer>
+      <footer>
     <p>
       <a
         href="https://www.facebook.com/profile.php?id=100009255955648"
@@ -141,4 +136,5 @@
       menu.classList.toggle("active");
     }
   </script>
+  </body>
 </html>
