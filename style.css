@@ -315,6 +315,9 @@ details {
   a.boks {
     font-size: x-large;
   }
+  .bokse :hover {
+    background-color: #f35197;
+  }
 
   /* En personlig tilgang DESKTOP*/
   .hvemerjeg {
@@ -362,5 +365,8 @@ details {
     gap: 50px;
     padding: 40px;
     text-align: center;
+  }
+  .temaer :hover {
+    background-color: #f35197;
   }
 }
