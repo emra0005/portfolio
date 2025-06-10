@@ -18,10 +18,6 @@
   src: url(fonte/WorkSans-Regular.ttf);
 }
 
-/* Primær
-Sekundær
-tredje farve */
-
 /* Lidt general styling */
 img {
   max-width: 100%;
@@ -54,6 +50,7 @@ h3 {
   font-family: "pop";
   font-size: large;
 }
+
 .lilleintro h3 {
   font-size: small;
   text-align: center;
@@ -67,29 +64,21 @@ p {
 }
 
 /* MOBIL FIIIIIIRRRRRRSSSTTTT */
-/* Husk nu E alt herfra og ind til @me gælder KUN op til og med 768px bredde:) */
+/* Husk nu alt herfra og ind til @me gælder KUN op til og med 768px bredde:) */
 
 /* FORSIDE - MOBIL */
 /* min hero section */
 
-.portfolio-animation {
-  width: 100%;
-}
 .animation {
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
   padding: 4rem;
 }
 .portfolio-animation {
-  max-width: none;
-  height: auto;
   transform: scale(1.5);
 }
 
 /* Mine site bokse styles og sættes i grid */
-
 .bokse {
   display: grid;
   grid-template-columns: 1fr;
@@ -97,7 +86,6 @@ p {
 }
 
 a.boks {
-  /* display: block; */
   background-color: #fe7f41;
   color: white;
   text-align: center;
@@ -131,9 +119,9 @@ a.boks {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .mellemrum h2 {
   color: #f7f3e2;
-  padding: 0;
 }
 
 /* styler mine "iderig" "krativ" "nysgerrig" */
@@ -148,36 +136,16 @@ a.boks {
 
 /* En personlig tilgang billede  */
 .hvemerjeg img {
-  margin-top: 30px;
+  margin-top: 80px;
   max-width: 50%;
   border-radius: 20px;
 }
 
-/* Får min iderig, kreativ, nysgerrig placeret i midten */
-.mellemrum {
-  align-items: center;
-}
-
 /* OM MIG */
-/* min billerække på om mig */
-.billederække {
-  display: grid;
-  grid-template-columns: 1fr;
-  place-items: center;
-  gap: 40px;
-  margin: 40px;
-}
-.billederække img {
-  max-width: 80%;
-  border-radius: 10px;
-}
-
+/* billede og tekst under EMILIE RASMUSSEN */
 .mig img {
-  max-width: 60%;
-  /* centrer billedet horisontalt */
-  margin: 20px auto;
-  /* nødvendig for min margi auto virker, normalt inline */
-  display: block;
+  margin-top: 40px;
+  max-width: 70%;
   border-radius: 280px;
 }
 .grid_2-1 {
@@ -195,12 +163,26 @@ a.boks {
   padding: 0;
 }
 
-/* laver streg under/inddeler */
+/* laver streg under/inddeler (CV) */
 details {
   border-bottom: 2px solid #f35197;
   padding: 10px;
 }
 
+/* "OM MIG" og "Tema undersider" - billeder i bunden -mobil */
+.billederække {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  gap: 40px;
+  margin: 40px;
+}
+.billederække img {
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+/* "Mine tema bokse på "projketer" */
 .temaer {
   display: grid;
   grid-template-columns: 1fr;
@@ -252,6 +234,7 @@ details {
   box-shadow: 5px 5px 5px grey;
   text-align: center;
 }
+
 /* min anden knap på en personlig tilgang */
 .btn2 {
   display: inline-block;
@@ -267,7 +250,8 @@ details {
   /* centrerer knappen */
   margin: 0 auto;
 }
-/* Min knap centrerer sig i midten under mine to kasser OM MIG */
+
+/* Min knap centrerer sig i midten under cv - OM MIG */
 .btn3 {
   display: flex;
   justify-content: center;
@@ -286,7 +270,7 @@ details {
 /* jeg får mine p'er ind i midten af artiklen */
 .article {
   max-width: 700px;
-  /* centrer containeren */
+  /* centrer hele containeren så jeg får den i midten*/
   margin: 0 auto;
   /* luft fra siderne */
   padding: 0 2rem;
@@ -297,8 +281,7 @@ details {
   line-height: 1.6;
 }
 
-/* får mit billede af mig på "om mig" til at fadein */
-
+/* får mit billede af mig på "om mig" til at fade langsomt ind */
 .fadeIn {
   animation: fadeIn 1s linear;
 }
@@ -311,16 +294,11 @@ details {
   }
 }
 
-/* DESKTOP VERSION MED MEDIA */
-
+/* BREAK POINT - MIN DESKTOP VERSION HERFRA*/
 @media (min-width: 768px) {
   /* FORSIDE - desktop */
 
   h1 {
-    color: #f35197;
-    font-family: "monoton";
-    text-align: center;
-    margin: 10px;
     font-size: 100px;
   }
 
@@ -360,12 +338,12 @@ details {
     margin-right: 40px;
   }
 
-  /* Mit kæææmpe navn på om mig*/
+  /* Styler mit kæææmpe navn på på "OM MIG*/
   h5 {
     font-size: 100px;
   }
 
-  /* min billerække på om mig */
+  /* min billerække på "om mig" og "tema undersiderne" */
   .billederække {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
